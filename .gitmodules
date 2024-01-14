@@ -1,0 +1,14 @@
+[submodule "Assignment-1"]
+	    path = Assignment-1
+	        url = Altschool-Third-Semester/Assignment-1
+
+[submodule "Assignment-2"]
+	    path = Assignment-2
+        	url = Altschool-Third-Semester/Assignment-2
+
+[submodule "Assignment-2"]
+	    path = Assignment-2
+	        url = Altschool-Third-Semester/Assignment-2/Holiday/Challenge
+
+	 
+
