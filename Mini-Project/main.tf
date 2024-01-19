@@ -2,7 +2,7 @@ terraform{
     required_providers {
         aws = {
             source = "hashicorp/aws"
-            version = "~> 50"
+            version = "~> 5.0"
         }
     }
 }
@@ -90,7 +90,7 @@ resource "aws_network_acl" "alt-network_acl" {
         rule_no = 100
         protocol = "-1"
         action = "allow"
-        cidr_block = "0.0.0.o/0"
+        cidr_block = "0.0.0.0/0"
         from_port = 0
         to_port = 0
     }

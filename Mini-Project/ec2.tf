@@ -10,7 +10,7 @@ resource "aws_instance" "alt-1" {
       type = "ssh"
       host = "self.public_ip"
       user = "ubuntu"
-      private_key = file("/root/Mini-project/mini-project.pem")
+      private_key = file("/root/Mini-Project/mini-project.pem")
 
     }
   
@@ -54,7 +54,7 @@ resource "aws_instance" "alt-3" {
       type = "ssh"
       host = "self.public_ip"
       user = "ubuntu"
-      private_key = file("/root/Mini-project/mini-project.pem")
+      private_key = file("/root/Mini-Project/mini-project.pem")
 
     }
   
@@ -65,7 +65,7 @@ resource "aws_instance" "alt-3" {
 }
 
 resource "local-file" "ip-addr" {
-    filename = "/root/Mini-project/ansible-playbook/host-inventory"
+    filename = "/root/Mini-Project/ansible-playbook/host-inventory"
     content = <<EOT
     $(aws_instance.alt-1.pub_ip)
     $(aws_instance.alt-2.pub_ip)

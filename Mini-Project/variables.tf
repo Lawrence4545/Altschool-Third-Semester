@@ -18,5 +18,5 @@ variable "availability_zone" {
         "a" = "us-east-1a"
         "b" = "us-east-1b"
     }
-    type = map(any)
+    
 }
