@@ -43,12 +43,12 @@ resource "aws_route_table" "alt-RT-pub" {
 }
 
 resource "aws_route_table_association" "alt-pub-subnet1-association" {
-  subnet_id      = aws_subnet.alt-pub-subnet1.vpc_id
+  subnet_id      = aws_subnet.alt-pub-subnet1.id
   route_table_id = aws_route_table.alt-RT-pub.id
 }
 
 resource "aws_route_table_association" "alt-pub-subnet2-association" {
-  subnet_id      = aws_subnet.alt-pub-subnet2.vpc_id
+  subnet_id      = aws_subnet.alt-pub-subnet2.id
   route_table_id = aws_route_table.alt-RT-pub.id
 }
 
